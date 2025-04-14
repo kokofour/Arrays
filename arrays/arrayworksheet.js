@@ -72,8 +72,33 @@ for (let i=0; i< array1.length; i++){
 
 // Part 6 : Print Even Indexed Elements
 const array = [10, 20, 30, 40, 50, 60];
+for (let i = 0; i< array.length; i++){
+    if (i%2 ===0){
+        console.log(array[i]);
+    }
+}
 
- num%2 ===0
+
+// Part 7 : Print Even Indexed Elements
+const students = ["Alice", "Bob", "Charlie"];
+const subjects = ["Math", "Biology", "English" ,"Computer Science"];
+
+// Outer loop goes through each student
+for (let i = 0; i < students.length; i++) {
+  // Inner loop goes through each subject
+  for (let j = 0; j < subjects.length; j++) {
+    console.log(students[i] + " - " + subjects[j]);
+  }
+}
+
+/*
+  Explanation:
+  - The outer loop selects one student at a time.
+  - The inner loop pairs that student with every subject.
+  - This is how nested loops work: for each item in the first array,
+    you go through all items in the second array.
+*/
+
 
 
 
